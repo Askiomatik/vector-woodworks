@@ -5,155 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vector Woodworks</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .product-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 20px auto;
-    }
-    .product {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    .product h2 {
-      margin: 0 0 10px;
-      font-size: 1.5em;
-      color: #333;
-    }
-    .product p {
-      margin: 5px 0;
-      color: #555;
-    }
-    .product-images {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .product-images img {
-      max-width: 150px;
-      border-radius: 5px;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .contact a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    @media (max-width: 600px) {
-      .product-container {
-        grid-template-columns: 1fr;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f9f9f9; }
+    header { text-align: center; padding: 20px; background: #4a2c0b; color: white; }
+    h1 { margin: 0; }
+    .products { max-width: 1000px; margin: 20px auto; }
+    .product { margin-bottom: 20px; padding: 15px; background: white; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .product h2 { margin: 0 0 10px; color: #4a2c0b; }
+    .product-images img { max-width: 150px; margin: 5px; border-radius: 5px; }
+    .contact { text-align: center; margin-top: 30px; }
+    .contact a { color: #007bff; text-decoration: none; }
+    @media (max-width: 600px) { .product-images img { max-width: 100px; } }
   </style>
 </head>
 <body>
   <header>
     <h1>Vector Woodworks</h1>
-    <p>Premium Wooden Coasters and Holders</p>
+    <p>Handcrafted Wooden Coasters & Holders</p>
   </header>
-
-  <div class="product-container" id="product-list"></div>
-
-  <div class="contact">
-    <p>Contact us for custom orders or wholesale inquiries: <a href="mailto:dheis@msn.com">dheis@msn.com</a></p>
+  <div class="products">
+    <div class="product">
+      <h2>Coaster Holder - Wholesale</h2>
+      <p>Elegant holders for 4 coasters. Minimum order of 10 sets.</p>
+      <div class="product-images">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/FullSizeRender.heic?v=1733328177" alt="Coaster Holder - Wholesale">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0302.jpg?v=1733328177" alt="Coaster Holder - Wholesale">
+      </div>
+    </div>
+    <div class="product">
+      <h2>Coaster Holder - Retail</h2>
+      <p>Display your set of 4 coasters on tables or shelves.</p>
+      <div class="product-images">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/FullSizeRender.heic?v=1733328177" alt="Coaster Holder - Retail">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0302.jpg?v=1733328177" alt="Coaster Holder - Retail">
+      </div>
+    </div>
+    <div class="product">
+      <h2>Custom Coaster - Set of 4 - Retail</h2>
+      <p>Set of 4 coasters with cork backing. Email for custom letter, name, or date.</p>
+      <div class="product-images">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/Williamson2.jpg?v=1732560475" alt="Custom Coaster">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/Williamson_15009c3e-617d-4f16-a50f-7c16ba1d1b91.jpg?v=1732560498" alt="Custom Coaster">
+      </div>
+    </div>
+    <div class="product">
+      <h2>Wholesale 'Smart' Coasters (With QR Code)</h2>
+      <p>CNC-carved coasters with your logo and QR code. Min order 10 sets.</p>
+      <div class="product-images">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0260.jpg?v=1732397813" alt="Smart Coasters">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0265.jpg?v=1732405583" alt="Smart Coasters">
+      </div>
+    </div>
+    <div class="product">
+      <h2>Wholesale Logo Coasters (No QR Code)</h2>
+      <p>CNC-carved coasters with your logo. Min order 10 sets.</p>
+      <div class="product-images">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0261.jpg?v=1732397785" alt="Logo Coasters">
+        <img src="https://cdn.shopify.com/s/files/1/0911/9134/5440/files/IMG-0257.jpg?v=1732395640" alt="Logo Coasters">
+      </div>
+    </div>
   </div>
-
-  <script>
-    const products = [
-      {
-        title: "Coaster Holder - Wholesale - Min order 10",
-        body: "These elegant and simple coaster holders can display your set of 4 coasters on a table or shelf or display the product in your store. They will fit in the current packaging options for sale as a retail product. Sold with sets of Coasters. Min order of 10 sets, add to the cost of your coaster selection of choice.",
-        
-        images: [
-          "images/holder1.jpg",
-        
-        ]
-      },
-      {
-        title: "Coaster Holder",
-        body: "These elegant holders can display your set of 4 coasters on tables or shelves.",
- 
-        images: [
-          "images/holder 3.jpg",
-       
-        ]
-      },
-      {
-        title: "Custom Coaster - Set of 4 -",
-        body: "Set of 4 coasters with packaging. Cork Backing included. Email for your Custom Coaster Letter, Name and optional Est. Date at dheis@msn.com.",
-        variants: [
-          { option: "No Est. Date (Letter and Name only)", },
-          { option: "Add Est. Date", }
-        ],
-       ,
-        images: [
-          "images/Williamson2.jpg",
-          "images/Williamson_15009c3e-617d-4f16-a50f-7c16ba1d1b91.jpg"
-        ]
-      },
-      {
-
-    
-        ]
-      },
-      {
-        title: "Wholesale Logo Coasters - Min order 10 sets",
-        body: "Premium CNC-carved wooden coasters featuring your business logo. Perfect for breweries, with a deep, tactile logo impression. Price is for a set of 4 coasters with cork backing and packaging (festive burlap bag, plain burlap bag, or box). No tax on wholesale items in Illinois (CRT-61). Free local delivery. Contact dheis@msn.com.",
-     ,
-        images: [
-          "images/coaster 1.jpg",
-          "images/coaster with beer.jpg",
-          "images/coaster with holder 2.jpg",
-          "images/coasters in box and bag.jpg",
-          "images/coaster in bag 2.jpg",
-          "images/lil beaver in holder.jpg"
-        ]
-      }
-    ];
-
-    const productList = document.getElementById("product-list");
-    products.forEach(product => {
-      const div = document.createElement("div");
-      div.className = "product";
-      let variantText = "";
-      if (product.variants) {
-        variantText = product.variants.map(v => `<p>Option: ${v.option} - $${v.price}</p>`).join("");
-      } else {
-        variantText = `<p>Price: $${product.price}</p>`;
-      }
-      div.innerHTML = `
-        <h2>${product.title}</h2>
-        <p>${product.body.replace(/<[^>]+>/g, "")}</p>
-        ${variantText}
-        <p>Stock: ${product.inventory} units</p>
-        <div class="product-images">
-          ${product.images.map(img => `<img src="${img}" alt="${product.title}">`).join("")}
-        </div>
-      `;
-      productList.appendChild(div);
-    });
-  </script>
+  <div class="contact">
+    <h2>Contact Us</h2>
+    <p>For questions or custom orders, email us at <a href="mailto:info@vectorwoodworks.com">info@vectorwoodworks.com</a></p>
+  </div>
 </body>
 </html>
